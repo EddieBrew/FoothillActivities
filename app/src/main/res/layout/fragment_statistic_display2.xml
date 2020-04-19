@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/foothills"
+	android:id = "@+id/display2"
+	android:orientation="vertical"
+	tools:context=".myFragments.StatisticDisplay2"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<!-- TODO: Update blank fragment layout -->
+	<RelativeLayout
+		android:id="@+id/CoyotesLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginEnd="3dp"
+		android:layout_marginBottom="3dp"
+		android:gravity="top"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="parent"
+		tools:layout_editor_absoluteX="3dp">
+
+		<Button
+			android:id="@+id/incrementCoyotesbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:text="@string/coyotes"
+			android:textColor="@android:color/black"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/numberCoyotesTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementCoyotesbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp" />
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/bikesTaggedLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@+id/CoyotesLayout"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginEnd="3dp"
+		android:layout_marginBottom="3dp"
+		android:gravity="top"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/CoyotesLayout"
+		tools:layout_editor_absoluteX="16dp">
+
+		<Button
+			android:id="@+id/incrementBikesTaggedbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:text= "@string/bike_tag"
+			android:textColor="@android:color/black"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/numberBikesTaggedTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementBikesTaggedbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp" />
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/mountainLionsLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@+id/bikesTaggedLayout"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginEnd="3dp"
+		android:layout_marginBottom="3dp"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/bikesTaggedLayout"
+		tools:layout_editor_absoluteX="16dp">
+
+		<Button
+			android:id="@+id/incrementMountainLionsbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:text="@string/mountain_lions"
+			android:textColor="@android:color/black"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/numberMountainLionsTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementMountainLionsbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp" />
+
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/workingDogsLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@+id/mountainLionsLayout"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginEnd="3dp"
+		android:layout_marginBottom="3dp"
+		android:gravity="top"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/mountainLionsLayout"
+		tools:layout_editor_absoluteX="3dp">
+
+		<Button
+			android:id="@+id/incrementWorkingDogsbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:text="@string/workindog"
+			android:textColor="@android:color/black"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/numberWorkingDogsTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementWorkingDogsbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp" />
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/WalkUpsLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@+id/workingDogsLayout"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_marginEnd="3dp"
+		android:layout_marginBottom="3dp"
+		android:gravity="top"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/workingDogsLayout"
+		tools:layout_editor_absoluteX="3dp">
+
+
+		<Button
+			android:id="@+id/incrementWalkUpsbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:text="@string/not_in_use"
+			android:textColor="@android:color/black"
+			android:textSize="20sp"
+			android:enabled="false"/>
+
+		<TextView
+			android:id="@+id/numberWalkUpTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementWalkUpsbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp"
+			android:enabled="false"/>
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/departersLayout"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@+id/WalkUpsLayout"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/WalkUpsLayout"
+		tools:layout_editor_absoluteX="16dp">
+
+		<Button
+			android:id="@+id/incrementTrespassersbtn"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:backgroundTint="@android:color/holo_green_light"
+			android:enabled="false"
+			android:text="@string/not_in_use"
+			android:textColor="@android:color/black"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/numberTrespassersTextView"
+			android:layout_width="75dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="75dp"
+			android:layout_toEndOf="@id/incrementTrespassersbtn"
+			android:text="0"
+			android:textColor="@android:color/holo_red_dark"
+			android:textColorLink="@android:color/background_dark"
+			android:textSize="40sp"
+			android:enabled="false"/>
+
+
+	</RelativeLayout>
+
+
+
+</RelativeLayout>
